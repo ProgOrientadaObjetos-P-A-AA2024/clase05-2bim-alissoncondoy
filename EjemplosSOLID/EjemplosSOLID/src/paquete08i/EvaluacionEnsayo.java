@@ -32,6 +32,9 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return totalProblemas;
     }
     
+    //Estos son metodos que usan interfaces de Evaluacion tipoDos, y para esto 
+    //se debe colocar antes implements que indica el uso de una interfaz y se 
+    //colocan obligatoriamente
     
     @Override
     public void establecerPromedioEnsayo() {
