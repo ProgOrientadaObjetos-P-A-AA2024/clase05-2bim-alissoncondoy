@@ -7,6 +7,26 @@ package paquete10d;
 public class Principal {
     public static void main(String[] args) {
         
+        APIDisneyPluss adis = new APIDisneyPluss();
+        adis.establecerApiKey("123455");
+        
+        GeneradorPeliculas gp3 = new GeneradorPeliculas();
+        gp3.establecerLlave(adis);
+        gp3.establecerUrl("http://api.movie?api=");
+        System.out.println(gp3.obtenerUrl());
+        
+        System.out.println("---------------------------");
+        
+        APIDgo adgo = new APIDgo();
+        adgo.establecerApiKey("123455");
+        
+        GeneradorPeliculas gp4 = new GeneradorPeliculas();
+        gp4.establecerLlave(adgo);
+        gp4.establecerUrl("http://api.movie?api=");
+        System.out.println(gp3.obtenerUrl());
+        
+        System.out.println("---------------------------");
+        
         APINetflix api = new APINetflix();
         api.establecerApiKey("123455");
         
