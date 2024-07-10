@@ -11,11 +11,13 @@ package paquete06l;
 public class TarjetaCredito {
     private String nombre;
     private String numero;
+    private Banco banco;
     
-    //public TarjetaCredito(String n, String num){
-    //    nombre = n;
-    //    numero = num;
-    //}
+    public TarjetaCredito(String n, String num, Banco b){
+        nombre = n;
+        numero = num;
+        banco = b;
+    }
     
     public void establecerNombre(String n){
         nombre = n;
@@ -31,5 +33,12 @@ public class TarjetaCredito {
     
     public String obtenerNumero(){
         return numero;
+    }
+    public void establecerBanco(Banco n){
+        banco = n;
+    }
+    
+    public Banco obtenerBanco(){
+        return banco;
     }
 }

@@ -15,6 +15,7 @@ public class MayorEdad extends Persona{
     public MayorEdad(String n, TarjetaCredito tar){
         super(n);
         tarjeta = tar;
+        
     }
     
     public void establecerTarjeta(TarjetaCredito n){
